@@ -4,7 +4,7 @@ A macOS app that renders the same graphics side by side using Metal (GPU) and Co
 
 ## Demo Scenes
 
-**3D Scenery** — Procedural landscape with sky gradient, animated sun, drifting clouds (FBM noise), layered mountains, trees, grass, and water with sparkles. Both renderers compute every pixel using the exact same algorithm (noise, FBM, smoothstep), making it a true apples-to-apples comparison. The GPU runs this massively in parallel; the CPU does it sequentially on one core.
+**3D Scenery** — Procedural landscape with sky gradient, animated sun, drifting clouds (FBM noise), layered mountains, trees, grass, and water with sparkles. Both renderers compute every pixel using the exact same algorithm (noise, FBM, smoothstep). The GPU runs this massively in parallel; the CPU does it sequentially on a single core.
 
 **Scrolling Text** — Wall of colored monospaced text scrolling vertically. CPU draws each line per frame using CoreText. Metal scrolls a pre-rendered texture atlas.
 
